@@ -30,7 +30,7 @@ public class ProductoController {
         return ResponseEntity.ok(productos);
     }
 
-    @PostMapping("/create")
+    @PostMapping("/save")
     public ResponseEntity<?> createProductos(@RequestBody Producto producto) {
         try {
             Producto createProducto = productoService.createProducto(producto);
